@@ -3,39 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BabyMIAO</title>
-    <meta name="description" content="Powered by LaunchKit" />
-    <meta property="og:title" content="BabyMIAO" />
-    <meta property="og:description" content="Powered by LaunchKit" />
-    
-    <meta name="twitter:card" content="summary" />
-    
+    <title>Baby MIAO</title>
+    <meta name="description" content="Powered by MIAO LaunchKit" />
+    <meta property="og:title" content="Baby MIAO" />
+    <meta property="og:description" content="Powered by MIAO LaunchKit" />
+    <meta property="og:image" content="https://gateway.irys.xyz/YccDXiBSRTTniCnhnzKt-QmsSE2Jue65qQx7IY_4UWk" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://gateway.irys.xyz/YccDXiBSRTTniCnhnzKt-QmsSE2Jue65qQx7IY_4UWk" />
     <style>
       :root{
-        --primary:#16a34a;
-        --secondary:#0f172a;
-        --bg:#0b1220;
-        --card:rgba(255,255,255,.06);
-        --border:rgba(255,255,255,.12);
+        --primary:#a2ff70;
+        --secondary:#ffb433;
+        --bg:#0c111d;
+        --card:rgba(255,255,255,.07);
+        --border:rgba(255,255,255,.15);
         --text:#e5e7eb;
-        --muted:rgba(229,231,235,.75);
-        --shadow:0 20px 60px rgba(0,0,0,.35);
-        --radius:20px;
-        --button-radius:14px;
-        --feature-bg:rgba(255,255,255,.04);
-        --feature-border:rgba(255,255,255,.10);
+        --muted:rgba(226,232,240,.78);
+        --shadow:0 24px 64px rgba(0,0,0,.5);
+        --radius:24px;
+        --button-radius:16px;
+        --feature-bg:rgba(255,255,255,.07);
+        --feature-border:rgba(255,255,255,.14);
       }
       *{box-sizing:border-box}
       body{
         margin:0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-        background:radial-gradient(900px 480px at 20% 10%, color-mix(in srgb, var(--primary) 34%, transparent), transparent 60%), radial-gradient(900px 480px at 80% 5%, color-mix(in srgb, var(--secondary) 40%, transparent), transparent 60%), #0b1220;
+        font-family: 'Satoshi', 'Inter', ui-sans-serif, system-ui;
+        background:radial-gradient(760px 460px at 70% 0%, color-mix(in srgb, var(--secondary) 40%, transparent), transparent 60%), #0c111d;
         color: var(--text);
       }
       .wrap{max-width:1040px;margin:0 auto;padding:60px 20px}
       .hero{
         border:1px solid var(--border);
-        background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+        background:linear-gradient(140deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
         border-radius:var(--radius);
         padding:28px;
         overflow:hidden;
@@ -46,15 +46,15 @@
       .badge{
         display:inline-flex;gap:10px;align-items:center;
         padding:8px 12px;border-radius:999px;
-        border:1px solid rgba(255,255,255,.16);
-        background:rgba(0,0,0,.25);
+        border:1px solid rgba(255,255,255,.18);
+        background:rgba(255,255,255,.10);
         font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
       }
       .badge i{display:inline-block;width:10px;height:10px;border-radius:999px;background:var(--primary);box-shadow:0 0 24px color-mix(in srgb, var(--primary) 60%, transparent)}
       h1{margin:16px 0 6px;font-size:44px;line-height:1.05;letter-spacing:-0.02em}
       p{margin:0;color:var(--muted);font-weight:600}
       .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
-      @media(min-width:860px){.grid{grid-template-columns:1.05fr .95fr}}
+      @media(min-width:860px){.grid{grid-template-columns:1fr}}
       .card{border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
       .k{color:var(--muted);font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
       .v{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight:800; word-break:break-all}
@@ -69,12 +69,12 @@
       }
       a.btn.primary{
         border-color:color-mix(in srgb, var(--primary) 55%, var(--border));
-        background:linear-gradient(90deg, color-mix(in srgb, var(--primary) 60%, transparent), color-mix(in srgb, var(--secondary) 50%, transparent));
+        background:linear-gradient(120deg, color-mix(in srgb, var(--primary) 65%, transparent), color-mix(in srgb, var(--secondary) 45%, transparent));
       }
       /* Sections (full-width, not "cards in a grid") */
       .lk-section{
-        border:1px solid rgba(255,255,255,.10);
-        background:rgba(255,255,255,.04);
+        border:1px solid rgba(255,255,255,.14);
+        background:rgba(255,255,255,.07);
         border-radius:var(--radius);
         padding:18px;
         position:relative;
@@ -432,7 +432,61 @@
       })();
     </script>
     <div class="wrap">
-      <div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section" id="tokenomics" data-section="tokenomics" data-lk-root="1">
+      <div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><div class="hero" data-section="hero" data-lk-root="1" id="hero">
+        <span class="badge"><i></i> Card Stack • Free</span>
+        <h1>Baby MIAO</h1>
+        <p>Powered by MIAO LaunchKit</p>
+        <div class="btns">
+          <a class="btn primary" href="#buy">Buy MIAO</a>
+          <a class="btn" href="https://solscan.io/token/2q7GNquoYrd1aRYE9NZQDfDKyErEqyWUAug5ec4ZbrbT" target="_blank" rel="noopener noreferrer">View on Solscan</a>
+          <a class="btn" href="./nfts.html" rel="noopener noreferrer">NFTs</a>
+        </div>
+        <div class="grid" style="margin-top:20px">
+          <div class="card">
+            <div class="k">Token name</div>
+            <div class="v">BABY MIAO</div>
+            <div class="k" style="margin-top:10px;">Symbol</div>
+            <div class="v">MIAO</div>
+          </div>
+          <div class="card" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+            <div style="flex:1;min-width:0">
+              <div class="k">Why MIAO</div>
+              <p style="margin-top:8px;line-height:1.6">Baby Cat from MIAO ARMY</p>
+              <div class="btns" style="margin-top:12px">
+                <a class="btn" href="#tokenomics">Tokenomics</a><a class="btn" href="#howtobuy">How to Buy</a><a class="btn" href="#roadmap">Roadmap</a><a class="btn" href="#team">Team</a><a class="btn" href="#faq">Faq</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section custom-block cta lk-effect-blur" id="custom-68003e57-de3f-47a9-947b-af302c3e02c9" data-section="custom:68003e57-de3f-47a9-947b-af302c3e02c9" data-lk-root="1" style="background-color:transparent;color:var(--text);padding:20px"><div class="lk-section-inner lk-cta">
+        <div class="lk-cta-left">
+          <div class="lk-cta-title">Ready to start?</div>
+          <div class="lk-rich"><p>Swap the links and publish.</p></div>
+        </div>
+        <div class="lk-cta-actions">
+          <a class="btn primary" href="#buy">Buy</a>
+          <a class="btn" href="#">View Solscan</a>
+        </div>
+      </div></section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section custom-block cards" id="custom-cards-d2230014-71c4-416f-8d27-83ce19d5bb05" data-section="custom:cards-d2230014-71c4-416f-8d27-83ce19d5bb05" data-lk-root="1" style="background-color:transparent;color:var(--text);padding:20px"><div class="lk-section-inner">
+        <div class="lk-section-title">Highlights da coleção</div>
+        <div class="lk-cards" style="--lk-cards-cols:3">
+          <div><strong>Arte</strong><br>Mostra 2–3 peças e descreve o estilo.</div>
+<div><strong>Utilidade</strong><br>O que o holder recebe?</div>
+<div><strong>Comunidade</strong><br>Convite para Discord/Telegram.</div>
+          
+        </div>
+        
+      </div></section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section custom-block cta" id="custom-cta-a5c3df2a-b407-4f31-b394-6c67e2490965" data-section="custom:cta-a5c3df2a-b407-4f31-b394-6c67e2490965" data-lk-root="1" style="background-color:transparent;color:var(--text);padding:20px"><div class="lk-section-inner lk-cta">
+        <div class="lk-cta-left">
+          <div class="lk-cta-title">Explorar a coleção</div>
+          <div class="lk-rich">Ativa a página NFTs e define o endereço da coleção para gerar links oficiais.</div>
+        </div>
+        <div class="lk-cta-actions">
+          <a class="btn primary" href="./nfts.html">Abrir NFTs</a>
+          <a class="btn" href="#hero">Voltar ao topo</a>
+        </div>
+      </div></section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section" id="tokenomics" data-section="tokenomics" data-lk-root="1">
             
             <div class="lk-section-inner">
               <div class="lk-section-title">Tokenomics</div>
@@ -445,7 +499,7 @@ Taxa: ideal 0/0 para UX melhor</div>
             <div class="lk-section-inner">
               <div class="lk-section-title">How to Buy</div>
               <div class="lk-rich">1) Abre a wallet
-2) Adiciona o mint: TBA
+2) Adiciona o mint: 2q7GNquoYrd1aRYE9NZQDfDKyErEqyWUAug5ec4ZbrbT
 3) Confirma no DEX.</div>
             </div>
           </section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section" id="roadmap" data-section="roadmap" data-lk-root="1">
@@ -456,49 +510,32 @@ Taxa: ideal 0/0 para UX melhor</div>
 • Listings & liquidez
 • Utilidades & parcerias</div>
             </div>
-          </section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><header class="site-header" data-section="header" data-lk-root="1" id="header">
-        <div class="header-content">
-          <div class="text-lg font-black">BabyMIAO</div>
-          
-        </div>
-      </header></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><div class="hero" data-section="hero" data-lk-root="1" id="hero">
-        <span class="badge"><i></i> Hero Pulse • Free</span>
-        <h1>BabyMIAO</h1>
-        <p>Powered by LaunchKit</p>
-        <div class="btns">
-          <a class="btn primary" href="#buy">Buy TOKEN</a>
-          
-          
-        </div>
-        <div class="grid" style="margin-top:20px">
-          <div class="card">
-            <div class="k">Token name</div>
-            <div class="v">Your Token</div>
-            <div class="k" style="margin-top:10px;">Symbol</div>
-            <div class="v">TOKEN</div>
-          </div>
-          <div class="card" style="display:flex;flex-direction:row;gap:12px;align-items:flex-start">
-            <div style="flex:1;min-width:0">
-              <div class="k">Why TOKEN</div>
-              <p style="margin-top:8px;line-height:1.6">Powered by LaunchKit</p>
-              <div class="btns" style="margin-top:12px">
-                <a class="btn" href="#tokenomics">Tokenomics</a><a class="btn" href="#howtobuy">How to Buy</a><a class="btn" href="#roadmap">Roadmap</a>
-              </div>
-            </div>
+          </section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section" id="team" data-section="team" data-lk-root="1">
             
-          </div>
-        </div>
-      </div></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><footer class="site-footer" data-section="footer" data-lk-root="1" id="footer">
+            <div class="lk-section-inner">
+              <div class="lk-section-title">Team</div>
+              <div class="lk-rich">Apresenta quem está por trás do projeto. Transparência aumenta confiança.</div>
+            </div>
+          </section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><section class="lk-section" id="faq" data-section="faq" data-lk-root="1">
+            
+            <div class="lk-section-inner">
+              <div class="lk-section-title">FAQ</div>
+              <div class="lk-rich">Dúvidas frequentes sobre compra, segurança e próximos passos.</div>
+            </div>
+          </section></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><footer class="site-footer" data-section="footer" data-lk-root="1" id="footer">
         <div class="footer-content">
-          
+          <div style="font-weight:900;opacity:.9">Coleção oficial</div>
           
           
           
         </div>
-      </footer></div></div>
-      <div class="footer">
-        Built with MIAO LaunchKit. Nunca partilhes a seed phrase. Confirma sempre o destinatário antes de assinar.
-      </div>
+      </footer></div></div><div class="lk-row"><div class="lk-cell" style="grid-column:span 12"><header class="site-header sticky" data-section="header" data-lk-root="1" id="header">
+        <div class="header-content">
+          <div class="text-lg font-black">Baby MIAO</div>
+          
+        </div>
+      </header></div></div>
+      
     </div>
   </body>
 </html>
